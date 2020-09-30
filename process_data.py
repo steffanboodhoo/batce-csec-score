@@ -13,9 +13,20 @@ def handle_process_csv(file_path):
         # return
     return students
 
+def create_mapping_dict(students):
+    application_code_index_dict, email_index_dict = {}, {}
+
+    for i in range(len(students)):
+        if students[i]['EMAIL_ADDRESS'] != '':
+            email_index_dict[students[i]['EMAIL_ADDRESS'].lower()] = i
+        if students[i]['APPLICATION_CODE'] != '':
+            application_code_index_dict[students[i]['APPLICATION_CODE']] = i
+    
+    return [application_code_index_dict, email_index_dict]
+
 def create_student(data_str):
     data_arr = data_str.split(',')
-    student = {'grades':{}}
+    student = {'grades':{}, 'SCHOOL':'N/A'}
 
     for i in range(len(data_arr)): # i => col index
         if i in DETAILS_MAPPING:
@@ -31,8 +42,8 @@ def create_student(data_str):
                 first_choices.append(data_arr[i])
             else:
                 second_choices.append(data_arr[i])
-        student['first_choices'] = first_choices
-        student['second_choices'] = second_choices
+        student['first_choices'] = first_choices[:3]
+        student['second_choices'] = second_choices[:3]
     return student
 
 if __name__ == "__main__":

@@ -10,10 +10,7 @@ def calculate_student_scores(students):
         students[i] = calculate_cape_score(students[i], 'first_choices')    
         students[i] = calculate_cape_score(students[i], 'second_choices')    
         #calculate second_choice scores
-        # students['second_choice_scores'] = {}
-        pprint(students[i])
-        # return
-
+    return students
     
 def calculate_general_score(student):
     score = 0
