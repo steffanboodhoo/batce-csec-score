@@ -93,27 +93,3 @@ def create_general_data_obj(student):
 if __name__ == "__main__":
     main()
 
-
-# {'APPLICATION_CODE': 'e7e502b189',
-#  'FIRST_NAME': 'Zahra',
-#  'LAST_NAME': 'Gaskin',
-#  'first_choices': ['ECONOMICS', 'PURE MATHEMATICS', 'APPLIED MATHEMATICS'],
-#  'first_choices_grades': {'APPLIED MATHEMATICS': {'score': 43},
-#                           'ECONOMICS': {'score': 31},
-#                           'PURE MATHEMATICS': {'score': 40}},
-#  'first_choices_grades_total': 114,
-#  'grades': {'ADDITIONAL MATHEMATICS': {'grade_string': 'I', 'score': 3},
-#             'ECONOMICS': {'grade_string': 'II', 'score': 2},
-#             'ENGLISH A': {'grade_string': 'I', 'score': 3},
-#             'ENGLISH B': {'grade_string': 'I', 'score': 3},
-#             'FRENCH': {'grade_string': 'I', 'score': 3},
-#             'GENERAL_SCORE': {'score': 25},
-#             'MATHEMATICS': {'grade_string': 'I', 'score': 3},
-#             'PHYSICAL EDUCATION AND SPORT': {'grade_string': 'II', 'score': 2},
-#             'PRINCIPLES OF ACCOUNTS': {'grade_string': 'I', 'score': 3},
-#             'SPANISH': {'grade_string': 'I', 'score': 3}},
-#  'second_choices': ['PURE MATHEMATICS', 'ENTREPRENEURSHIP', 'SPANISH'],
-#  'second_choices_grades': {'ENTREPRENEURSHIP': {'score': 25},
-#                            'PURE MATHEMATICS': {'score': 40},
-#                            'SPANISH': {'score': 34}},
-#  'second_choices_grades_total': 99}
